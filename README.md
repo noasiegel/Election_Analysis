@@ -27,11 +27,12 @@ The purpose of the election audit analysis was to created an automated way to ta
 
 This script can be used for any election data. By running the script, will immidately learn the winning candidate, along with total vote count, winning county, and subsequent percentages of votes and votes for each candidate and county. 
 
-# Modifications
+### Modifications
 
 One modification that might be necessary for another data set is updating the name of the file being read into the command line. See the below code for reference: 
 
 file_to_load = os.path.join("Resources", "election_results.csv")
+
 file_to_save = os.path.join("analysis", "election_analysis.txt")
 
 If we wanted to run new election data through this script, we could keep the assigned variables, but would have the change the folder names and text file names to match what we were working with. 
