@@ -7,12 +7,6 @@ The purpose of the election audit analysis was to created an automated way to ta
 
 ## Election-Audit Results
 
-The code I used to get the total vote output: 
-    
-    for row in reader:
-        total_votes = total_votes + 1
-        candidate_name = row[2]
-
 
 * Votes cast in congressional election: 369,711
 * Breakdown of County Results
@@ -31,4 +25,16 @@ The code I used to get the total vote output:
 
 ## Election-Audit Summary
 
-This script can be used for any election data. One modification that might be necessary for another data set is updating the name of the file being read into the command line.  
+This script can be used for any election data. By running the script, will immidately learn the winning candidate, along with total vote count, winning county, and subsequent percentages of votes and votes for each candidate and county. 
+
+# Modifications
+
+One modification that might be necessary for another data set is updating the name of the file being read into the command line. See the below code for reference: 
+
+file_to_load = os.path.join("Resources", "election_results.csv")
+file_to_save = os.path.join("analysis", "election_analysis.txt")
+
+If we wanted to run new election data through this script, we could keep the assigned variables, but would have the change the folder names and text file names to match what we were working with. 
+
+
+It is also possible that the script might need to be modified to account for larger datasets. For example, if one wanted to use this code for the presidential election, there would be many more votes, counties, candidates, etc to account for. With that said, the script may have to be modified to account for performance testing. There are various iterations of code that can check performance of a script or program. 
