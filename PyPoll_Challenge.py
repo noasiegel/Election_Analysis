@@ -178,7 +178,8 @@ with open(file_to_save, "a") as txt_file:
             f"Winner: {winning_candidate}\n"
             f"Winning Vote Count: {winning_count:,}\n"
             f"Winning Percentage: {winning_percentage:.1f}%\n"
-            f"-------------------------\n")
+            f"-------------------------\n"
+            f"Authored by Noa\n")
     print(winning_candidate_summary)
 
     # Save the winning candidate's name to the text file
