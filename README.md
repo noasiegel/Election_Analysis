@@ -7,5 +7,5 @@ The purpose of the election audit analysis was to help Tom, a Colorado board of 
 
 ## Election-Audit Results
 
-Markup: -Votes cast in congressional election: 369,711
+* Votes cast in congressional election: 369,711
 
